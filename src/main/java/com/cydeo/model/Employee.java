@@ -23,16 +23,16 @@ public class Employee {
     @Size(max = 12, min = 3)
     private String firstName;
     private String lastName;
-    @NotNull
+//    @NotNull
     //Thymeleaf -->yyyy-MM-dd,   but LocalDate---->mm-dd-yyyy
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthday;
 
-    @NotNull
-    @Email
+//    @NotNull
+//    @Email
     private String email;
-    @NotBlank
-
+//    @NotBlank
+//    @Pattern(regexp = "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,}")
     private String password;
     private String address;
     private String address2;
